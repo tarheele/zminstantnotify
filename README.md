@@ -1,16 +1,4 @@
 
-
-### Thanks to ZoneMinder Authors / Contributors
-I have been using ZM for about 15 years and I am thankful to those who have 
-contributed.  It is a very cool and fun security addition to my home. 
-
-Be kind, I have been programming many years, but I think this is my first non-trivial perl script, so it will surely make OCD folks cringe.  This was developed under the Get R Done model.
-
-### Supported versions
-I developed this on 1.32.3 and will be upgrading soon.  Try it and see if it works in 1.32+.  
-The script only tries to read from shared memory and does not write, so it should not have any 
-side effects on other ZM components.
-
 ### This is the lightweight, simple, instant ZM event notification that you crave!!!
 This script is a light weight event notification daemon which can be easily changed to call or 
 do whatever you want.  The provided sample actions script calls pushover to send instant notifications
@@ -24,11 +12,20 @@ in-app snooze in case you have a windy day that blows up your phone with notific
 Obviously you have to create your own pushover account if you go this route.
 
 ### TLDR
-Follow the instructions below to install zminstantnotify.pl and have it started by ZM as a deamon.
+*Follow the instructions below to install zminstantnotify.pl and have it started by ZM as a deamon.
+*Put zminstantnotify-actions.pl in the same directory.
+*Look for "ADD YOUR STUFF HERE" for code you might want to hack, mainly in the actions script
 
-Put zminstantnotify-actions.pl in the same directory.
+### Thanks to ZoneMinder Authors / Contributors
+I have been using ZM for about 15 years and I am thankful to those who have 
+contributed.  It is a very cool and fun security addition to my home. 
 
-Look for "ADD YOUR STUFF HERE" for code you might want to hack, mainly in the actions script
+Be kind, I have been programming many years, but I think this is my first non-trivial perl script, so it will surely make OCD folks cringe.  This was developed under the Get R Done model.
+
+### Supported versions
+I developed this on 1.32.3 and will be upgrading soon.  Try it and see if it works in 1.32+.  
+The script only tries to read from shared memory and does not write, so it should not have any 
+side effects on other ZM components.
 
 ### Why do we need it?
 * The only way ZoneMinder sends out event notifications via event filters - this is too slow
