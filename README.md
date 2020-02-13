@@ -17,7 +17,7 @@ Obviously you have to create your own pushover account if you go this route.
 * Look for "ADD YOUR STUFF HERE" for code you might want to hack, mainly in the actions script
 
 ### Thanks to ZoneMinder Authors / Contributors
-I have been using ZM for about 15 years and I am thankful to those who have 
+I have been using ZM https://zoneminder.com/ for about 15 years and I am thankful to those who have 
 contributed.  It is a very cool and fun security addition to my home. 
 
 Be kind, I have been programming many years, but I think this is my first non-trivial perl script, so it will surely make OCD folks cringe.  This was developed under the Get R Done model.
