@@ -39,19 +39,18 @@ No, but it would be great if it was included.
 I tried to be concise and explain things via the code and logging statements.
 
 ### Why did I create this?
-ZM filters were never really designed for real time event / alarm handling.
-
-I cannot tell you how much time I wasted over the years trying to get the zmfilter
-do this.  ZM filters are great for creating views, but are clunky, slow, and hard to debug for actions.
+* The only way ZoneMinder sends out event notifications via event filters - this is too slow
+* ZM filters were never really designed for real time event / alarm handling
+* You will love how simple this is.  No crazy clients or setup.  Just install edit and go.
+* (I cannot tell you how much time I wasted over the years trying to get the zmfilter
+do this)
 
 ### Logging
-Both scripts logs to the zoneminder log in their own file entries.  Use the File pulldown to select either one of the scripts.
+Both scripts log to the zoneminder log under their own file entries.  Use the File pulldown to select either one of the scripts.
 
-If you do not seen an entry for the actions script, then actions may not have occurred recently.
-Trigger an alarm and then look again.
+If you do not seen an entry for the actions script, then actions may not have occurred recently.  Trigger an alarm and then look again.
 
-If you are running it standalone to test (and you should), 
-you will send log entries to stdout.
+If you are running it standalone to test (and you should), you will send log entries to stdout.
 
 I added much logging so that you can see exactly what decisions are being made and why.  Note
 that there are data dump logging events enabled via $DEBUG and some are commented out that you can uncomment to see great detail.
