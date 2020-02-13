@@ -12,9 +12,9 @@ in-app snooze in case you have a windy day that blows up your phone with notific
 Obviously you have to create your own pushover account if you go this route.
 
 ### TLDR
-*Follow the instructions below to install zminstantnotify.pl and have it started by ZM as a deamon.
-*Put zminstantnotify-actions.pl in the same directory.
-*Look for "ADD YOUR STUFF HERE" for code you might want to hack, mainly in the actions script
+* Follow the instructions below to install zminstantnotify.pl and have it started by ZM as a deamon.
+* Put zminstantnotify-actions.pl in the same directory.
+* Look for "ADD YOUR STUFF HERE" for code you might want to hack, mainly in the actions script
 
 ### Thanks to ZoneMinder Authors / Contributors
 I have been using ZM for about 15 years and I am thankful to those who have 
