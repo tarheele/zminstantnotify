@@ -99,8 +99,8 @@ add it as  a daemon as if you don't and it crashes you won't know why**
 (Note if you have compiled from source using cmake, the paths may be ``/usr/local/bin`` not ``/usr/bin``)
 
 * Copy ``zminstantnotification.pl`` and ``zminstantnotification-actions.pl`` to ``/usr/bin``
-* Edit ``/usr/bin/zmdc.pl`` and in the array ``@daemons`` (starting line 80) add ``'zminstantnotification.pl'`` like [this](https://gist.github.com/pliablepixels/18bb68438410d5e4b644 - but file name is different)
-* Edit ``/usr/bin/zmpkg.pl`` and around line 260, right after the comment that says ``#this is now started unconditionally`` and right before the line that says ``runCommand( "zmdc.pl start zmfilter.pl" );`` start zmeventnotification.pl by adding ``runCommand( "zmdc.pl start zminstantnotification.pl" );`` like  [this](https://gist.github.com/pliablepixels/0977a77fa100842e25f2 - but file name is different)
+* Edit ``/usr/bin/zmdc.pl`` and in the array ``@daemons`` (starting line 80) add ``'zminstantnotification.pl'`` 
+* Edit ``/usr/bin/zmpkg.pl`` and around line 260, right after the comment that says ``#this is now started unconditionally`` and right before the line that says ``runCommand( "zmdc.pl start zmfilter.pl" );`` start zmeventnotification.pl by adding ``runCommand( "zmdc.pl start zminstantnotification.pl" );`` 
 * Make sure you restart ZM. Rebooting the server is better - sometimes zmdc hangs around and you'll be wondering why your new daemon hasn't started
 * To check if its running do a ``zmdc.pl status zminstantnotification.pl``
 
